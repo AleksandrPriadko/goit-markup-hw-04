@@ -124,7 +124,7 @@ body {
 }
 
 .address-link::before {
-  content: "";
+  content: '';
   display: inline-flex;
   width: 16px;
   height: 12px;
@@ -153,7 +153,7 @@ body {
 }
 
 .phone-link::before {
-  content: "";
+  content: '';
   display: inline-flex;
   width: 10px;
   height: 16px;
@@ -189,7 +189,6 @@ body {
   min-width: 1200px;
   padding-top: 200px;
   padding-bottom: 200px;
-
 }
 
 .services {
@@ -235,7 +234,6 @@ body {
 .info {
   background-color: #ffffff;
   min-width: 1200px;
-
 }
 
 .text-align {
@@ -282,13 +280,12 @@ body {
 
 /* СПУТНИК */
 .list-main:nth-child(1)::before {
-  content: "";
+  content: '';
   display: block;
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background: url(../images/icon/Group.svg),
-    #F5F4FA;
+  background: url(../images/icon/Group.svg), #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
@@ -296,13 +293,12 @@ body {
 
 /* ЧАСЫ */
 .list-main:nth-child(2)::before {
-  content: "";
+  content: '';
   display: block;
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background: url(../images/icon/clock\ 1.svg),
-    #F5F4FA;
+  background: url(../images/icon/clock\ 1.svg), #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
@@ -310,13 +306,12 @@ body {
 
 /* Компьютер */
 .list-main:nth-child(3)::before {
-  content: "";
+  content: '';
   display: block;
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background: url(../images/icon/diagram\ 1.svg),
-    #F5F4FA;
+  background: url(../images/icon/diagram\ 1.svg), #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
@@ -324,13 +319,12 @@ body {
 
 /* Астронафт */
 .list-main:nth-child(4)::before {
-  content: "";
+  content: '';
   display: block;
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background: url(../images/icon/astronaut\ 1.svg),
-    #F5F4FA;
+  background: url(../images/icon/astronaut\ 1.svg), #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
@@ -418,8 +412,8 @@ body {
 }
 
 .list-comand {
-  display: block;
   padding-right: 0px;
+  list-style: none;
 }
 
 .bloc-comand {
@@ -444,7 +438,7 @@ body {
   margin-bottom: 10px;
 }
 
-.bloc-comand p:last-child {
+.bloc-comand p:last-of-type {
   text-align: center;
   font-family: 'Roboto';
   font-style: normal;
@@ -455,24 +449,67 @@ body {
   margin-bottom: 16px;
 }
 
-.bloc-comand div {
-  display: inline-flex;
-}
-
-.bloc-comand ul {
-  display: inline-flex;
-  justify-content: center;
+.soc {
+  display: flex;
   list-style: none;
   padding-left: 0px;
+  margin-bottom: 30px;
 }
-
+.soc.center {
+  justify-content: center;
+}
+.soc img {
+  display: block;
+  object-position: 50%;
+  margin: 0px;
+}
 .bloc-comand li {
+  display: inline-block;
+}
+.bloc-comand li:not(:last-child) {
   padding-right: 10px;
 }
 
+.bloc-comand a {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+}
+
 .size-img {
+  display: block;
   width: 270px;
   margin-bottom: 30px;
+}
+
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+.box-client {
+  display: inline-flex;
+  margin: 0px;
+  padding-left: 0px;
+}
+.client h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.box-client li {
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.box-client li:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*ПОДВАЛ*/
@@ -487,6 +524,24 @@ body {
 .logo-footer {
   margin: 0px;
   padding-bottom: 20px;
+}
+.footer-box {
+  display: inline-block;
+  margin-right: 70px;
+}
+.footer-box h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 0px;
+}
+.footer-box ul {
+  display: inline-flex;
 }
 
 .address {

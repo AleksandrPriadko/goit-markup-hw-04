@@ -115,11 +115,23 @@ body {
   margin-right: 50px;
   text-decoration: none;
   transition: color 0.2s linear;
+  display: inline-flex;
   align-items: center;
 }
 
 .address-link:hover {
   color: #2196f3;
+}
+
+.address-link::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/icon/envelope.svg);
+  background-size: contain;
+  background-position: center;
+  margin-right: 10px;
 }
 
 .phone-link {
@@ -132,15 +144,29 @@ body {
   color: #757575;
   text-decoration: none;
   align-items: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 .phone-link:hover {
   color: #2196f3;
 }
 
+.phone-link::before {
+  content: "";
+  display: inline-flex;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/icon/smartphone.svg);
+  background-size: contain;
+  background-position: center;
+  margin-right: 10px;
+}
+
 /* Шапка сайта*/
 .header {
   background: #ffffff;
+  min-width: 1200px;
   padding-top: 25px;
   padding-bottom: 25px;
   border: 1px solid #ececec;
@@ -160,8 +186,10 @@ body {
 
 .bissnes {
   background-color: #2f303a;
+  min-width: 1200px;
   padding-top: 200px;
   padding-bottom: 200px;
+
 }
 
 .services {
@@ -205,7 +233,9 @@ body {
 
 /*СЕКЦИЯ 2*/
 .info {
-  background: #ffffff;
+  background-color: #ffffff;
+  min-width: 1200px;
+
 }
 
 .text-align {
@@ -248,6 +278,62 @@ body {
   display: block;
   width: 270px;
   height: 75px;
+}
+
+/* СПУТНИК */
+.list-main:nth-child(1)::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: url(../images/icon/Group.svg),
+    #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+/* ЧАСЫ */
+.list-main:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: url(../images/icon/clock\ 1.svg),
+    #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+/* Компьютер */
+.list-main:nth-child(3)::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: url(../images/icon/diagram\ 1.svg),
+    #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+/* Астронафт */
+.list-main:nth-child(4)::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: url(../images/icon/astronaut\ 1.svg),
+    #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
 }
 
 .blok {
@@ -305,7 +391,8 @@ body {
 
 /* СЕКЦИЯ 3 (Наша Команда) */
 .comand {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
+  min-width: 1200px;
   padding-top: 0px;
 }
 
@@ -338,7 +425,7 @@ body {
 .bloc-comand {
   display: inline-block;
   width: 270px;
-  height: 368px;
+  height: auto;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -353,6 +440,8 @@ body {
   line-height: 19px;
   color: #212121;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .bloc-comand p:last-child {
@@ -363,15 +452,33 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #757575;
+  margin-bottom: 16px;
+}
+
+.bloc-comand div {
+  display: inline-flex;
+}
+
+.bloc-comand ul {
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.bloc-comand li {
+  padding-right: 10px;
 }
 
 .size-img {
   width: 270px;
+  margin-bottom: 30px;
 }
 
 /*ПОДВАЛ*/
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
+  min-width: 1200px;
   margin: 0px;
   padding-top: 60px;
   padding-bottom: 60px;

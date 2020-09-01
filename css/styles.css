@@ -104,63 +104,43 @@ body {
   margin: 0px;
 }
 
-.address-link {
+.textstyle {
+  display: inline-flex;
+  align-items: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-right: 50px;
   text-decoration: none;
   transition: color 0.2s linear;
-  display: inline-flex;
-  align-items: center;
 }
-
-.address-link:hover {
-  color: #2196f3;
+.textstyle:not(:last-child) {
+  margin-right: 50px;
 }
-
-.address-link::before {
-  content: "";
-  display: inline-flex;
+.svg-mail {
+  display: block;
   width: 16px;
   height: 12px;
-  background-image: url(../images/icon/envelope.svg);
-  background-size: contain;
-  background-position: center;
   margin-right: 10px;
+  fill: currentColor;
 }
 
-.phone-link {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  text-decoration: none;
-  align-items: center;
-  display: inline-flex;
-  align-items: center;
-}
-
-.phone-link:hover {
-  color: #2196f3;
-}
-
-.phone-link::before {
-  content: "";
-  display: inline-flex;
+.svg-phone {
+  display: inline-block;
   width: 10px;
   height: 16px;
-  background-image: url(../images/icon/smartphone.svg);
-  background-size: contain;
-  background-position: center;
   margin-right: 10px;
+  fill: currentColor;
+}
+.address-link:hover {
+  fill: #2196f3;
+  color: #2196f3;
+}
+.phonelink:hover {
+  fill: #2196f3;
+  color: #2196f3;
 }
 
 /* Шапка сайта*/
@@ -489,6 +469,7 @@ body {
   margin: 0px;
 }
 .svg-box:hover {
+  fill: #ffffff;
   border-radius: 50%;
   background-color: #2196f3;
 }
@@ -501,9 +482,10 @@ body {
   width: 20px;
   height: 20px;
 }
-.svg:hover {
+/* .svg:hover {
   fill: #ffffff;
-}
+} */
+
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 .box-client {
   display: inline-flex;

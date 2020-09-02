@@ -399,7 +399,7 @@ body {
 }
 
 .list-comand:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .list-comand {
@@ -438,42 +438,43 @@ body {
   color: #757575;
   margin-bottom: 16px;
 }
+.box-social {
+  display: block;
+  margin-bottom: 30px;
+}
 
 .soc {
   display: flex;
   list-style: none;
   padding-left: 0px;
-  margin-bottom: 30px;
-}
-.soc.center {
   justify-content: center;
 }
 
-.bloc-comand li {
-  display: inline-block;
+.soc li {
+  display: block;
 }
-.bloc-comand li:not(:last-child) {
-  padding-right: 10px;
+.soc li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .size-img {
-  display: inline-block;
+  display: block;
   width: 270px;
   margin-bottom: 30px;
 }
-.svg-box {
+.stylesvg {
   display: block;
   width: 44px;
   height: 44px;
   padding: 0px;
-  margin: 0px;
+  margin-right: 0px;
 }
-.svg-box:hover {
+.soc-box:hover {
   fill: #ffffff;
   border-radius: 50%;
   background-color: #2196f3;
 }
-.svg {
+.svg-soc {
   display: block;
   position: relative;
   left: 12px;
@@ -481,11 +482,8 @@ body {
   fill: #afb1b8;
   width: 20px;
   height: 20px;
+  margin-right: 0px;
 }
-/* .svg:hover {
-  fill: #ffffff;
-} */
-
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 .box-client {
   display: inline-flex;

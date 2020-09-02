@@ -116,9 +116,11 @@ body {
   text-decoration: none;
   transition: color 0.2s linear;
 }
+
 .textstyle:not(:last-child) {
   margin-right: 50px;
 }
+
 .svg-mail {
   display: block;
   width: 16px;
@@ -134,10 +136,12 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
+
 .address-link:hover {
   fill: #2196f3;
   color: #2196f3;
 }
+
 .phonelink:hover {
   fill: #2196f3;
   color: #2196f3;
@@ -165,17 +169,16 @@ body {
 }
 
 .bissnes {
-  min-width: 1600px;
+  min-width: 1200px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .fon {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
     url(../images/fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -438,6 +441,7 @@ body {
   color: #757575;
   margin-bottom: 16px;
 }
+
 .box-social {
   display: block;
   margin-bottom: 30px;
@@ -453,6 +457,7 @@ body {
 .soc li {
   display: block;
 }
+
 .soc li:not(:last-child) {
   margin-right: 10px;
 }
@@ -462,6 +467,7 @@ body {
   width: 270px;
   margin-bottom: 30px;
 }
+
 .stylesvg {
   display: flex;
   justify-content: center;
@@ -472,22 +478,78 @@ body {
   margin-right: 0px;
   fill: #afb1b8;
 }
+
 .stylesvg:hover {
   fill: #ffffff;
   border-radius: 50%;
   background-color: #2196f3;
 }
+
 .svg-soc {
   width: 20px;
   height: 20px;
   margin-right: 0px;
 }
+
+
+/* СЕКЦИЯ 4 "Постоянные клиенты" */
+
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 .box-client {
-  display: inline-flex;
+  display: flex;
   margin: 0px;
   padding-left: 0px;
 }
+
+.logo-items {
+  margin-right: 0px;
+}
+
+.logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+.logo-link:hover {
+  --color1: #2196f3;
+  border-color: #2196f3;
+}
+
+.box-client li:nth-of-type(1) .logo-items {
+  width: 44px;
+  height: 49px;
+}
+
+.box-client li:nth-of-type(2) .logo-items {
+  width: 40px;
+  height: 52px;
+}
+
+.box-client li:nth-of-type(3) .logo-items {
+  width: 41px;
+  height: 42px;
+}
+
+.box-client li:nth-of-type(4) .logo-items {
+  width: 80px;
+  height: 42px;
+}
+
+.box-client li:nth-of-type(5) .logo-items {
+  width: 59px;
+  height: 47px;
+}
+
+.box-client li:nth-of-type(6) .logo-items {
+  width: 88px;
+  height: 45px;
+}
+
 
 .client h2 {
   font-family: "Roboto";
@@ -503,16 +565,13 @@ body {
 }
 
 .box-client li {
-  display: inline-block;
-  height: 90px;
+  list-style: none;
 }
+
 .box-client li:not(:last-child) {
   margin-right: 30px;
 }
-.box-client a {
-  display: inline-block;
-  height: 90px;
-}
+
 
 /*ПОДВАЛ*/
 .footer {
@@ -527,10 +586,12 @@ body {
   margin: 0px;
   padding-bottom: 20px;
 }
+
 .footer-box {
   display: inline-block;
   margin-right: 70px;
 }
+
 .footer-box h3 {
   font-family: "Roboto";
   font-style: normal;
@@ -542,6 +603,7 @@ body {
   color: #ffffff;
   margin-top: 0px;
 }
+
 .footer-box ul {
   display: inline-flex;
 }

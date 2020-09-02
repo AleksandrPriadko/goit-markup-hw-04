@@ -150,7 +150,7 @@ body {
 /* Шапка сайта*/
 .header {
   background: #ffffff;
-  min-width: 1200px;
+  min-width: 1600px;
   padding-top: 25px;
   padding-bottom: 25px;
   border: 1px solid #ececec;
@@ -169,7 +169,7 @@ body {
 }
 
 .bissnes {
-  min-width: 1200px;
+  min-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -186,38 +186,29 @@ body {
 }
 
 .services {
-  font-family: "Roboto";
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 30px;
-  margin: 0px;
-  color: #ffffff;
-  text-transform: uppercase;
-  padding-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .services p {
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
   margin: 0px;
   line-height: 60px;
-  text-align: center;
+  color: #ffffff;
 }
 
 .btn {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  text-align: center;
   letter-spacing: 0.06em;
-  display: inline-block;
-  min-width: 200px;
-  min-height: 50px;
   color: #ffffff;
-  padding: 0px;
   padding: 10px 32px;
   text-decoration: none;
   margin-left: auto;
@@ -232,9 +223,9 @@ body {
 
 .text-align {
   display: flex;
-  margin: 0px;
+  margin-top: 0px;
   padding-left: 0px;
-  padding-bottom: 95px;
+  margin-bottom: 95px;
 }
 
 .text-align .list-main:not(:last-child) {
@@ -359,7 +350,7 @@ body {
   line-height: 42px;
   color: #212121;
   margin: 0px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .img-box {
@@ -374,26 +365,21 @@ body {
 }
 
 .img-blok:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 /* СЕКЦИЯ 3 (Наша Команда) */
 .comand {
   background-color: #f5f4fa;
   min-width: 1600px;
-  padding-top: 0px;
+
 }
 
 .our-team {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   text-align: center;
-  color: #212121;
-  margin: 0px;
-  padding-top: 95px;
-  padding-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 .box-team {
@@ -495,6 +481,19 @@ body {
 /* СЕКЦИЯ 4 "Постоянные клиенты" */
 
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
+.client {
+  min-width: 1600px;
+}
+
+.subject {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
 .box-client {
   display: flex;
   margin: 0px;
@@ -513,6 +512,12 @@ body {
   border-radius: 4px;
   width: 170px;
   height: 90px;
+}
+
+.box-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-link:hover {
@@ -550,20 +555,6 @@ body {
   height: 45px;
 }
 
-
-.client h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
-
 .box-client li {
   list-style: none;
 }
@@ -576,13 +567,14 @@ body {
 /*ПОДВАЛ*/
 .footer {
   background-color: #2f303a;
-  min-width: 1200px;
+  min-width: 1600px;
   margin: 0px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .logo-footer {
+  display: block;
   margin: 0px;
   padding-bottom: 20px;
 }
@@ -591,6 +583,7 @@ body {
   display: inline-block;
   margin-right: 70px;
 }
+
 
 .footer-box h3 {
   font-family: "Roboto";
@@ -604,12 +597,9 @@ body {
   margin-top: 0px;
 }
 
-.footer-box ul {
-  display: inline-flex;
-}
 
 .address {
-  display: inline-block;
+  display: block;
   margin: 0px;
 }
 

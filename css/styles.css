@@ -568,24 +568,37 @@ body {
 .footer {
   background-color: #2f303a;
   min-width: 1600px;
-  margin: 0px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .logo-footer {
-  display: block;
-  margin: 0px;
-  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .footer-box {
-  display: inline-block;
+  display: inline-flex;
   margin-right: 70px;
 }
 
+.content-footer {
+  display: block;
+}
 
-.footer-box h3 {
+.list-join {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.list-join li:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+.footer-subject {
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
@@ -595,6 +608,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 
@@ -627,6 +641,11 @@ body {
 
 .address p {
   margin: 0px;
+}
+
+.soc-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 /* ПОРТФОЛИО */

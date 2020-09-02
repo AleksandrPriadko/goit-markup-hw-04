@@ -696,16 +696,22 @@ body {
 }
 
 .list-port {
-  padding-right: 30px;
-  padding-bottom: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.list-port:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .list-port:nth-child(3n) {
-  padding-right: 0px;
+  margin-right: 0px;
 }
 
 .list-port:nth-child(n + 6) {
-  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .container-box {

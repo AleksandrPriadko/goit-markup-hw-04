@@ -676,11 +676,21 @@ body {
 }
 
 .nav-portfolio {
+  display: inline-flex;
   margin: 0px;
   padding-left: 0px;
   justify-content: center;
   list-style: none;
   padding-bottom: 50px;
+}
+
+.block-nav-portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-items {
+  min-width: 1600px;
 }
 
 .portfolio-link:not(:last-child) {
@@ -697,7 +707,6 @@ body {
 
 .list-port {
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .list-port:hover {
@@ -706,16 +715,18 @@ body {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.list-port:nth-child(3n) {
+.list-port:nth-child(3n+3) {
   margin-right: 0px;
 }
 
-.list-port:nth-child(n + 6) {
-  margin-bottom: 0px;
+.list-port:nth-child(-n + 6) {
+  margin-bottom: 30px;
 }
 
 .container-box {
-  display: block;
+  display: inline-block;
+  width: 370px;
+  height: auto;
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
@@ -748,5 +759,6 @@ body {
 }
 
 .img-size {
-  width: 360px;
+  display: block;
+  width: 369px;
 }
